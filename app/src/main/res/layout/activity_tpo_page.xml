@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TpoPage">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="add company"
+        android:id="@+id/addcompany"
+        android:textSize="22sp"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_rounded"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="add selected students"
+        android:id="@+id/addstudents"
+        android:textSize="22sp"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="add previous papers"
+        android:id="@+id/addpapers"
+        android:textSize="22sp"
+        android:textColor="#ffffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Home Page"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:id="@+id/homedir"
+        android:textStyle="italic"
+        android:onClick="direct"/>
+
+
+</LinearLayout>

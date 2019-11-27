@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Image_Upload">
+
+    <Button
+        android:id="@+id/imgchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE FILE"
+        android:textSize="22sp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/button_rounded"/>
+
+    <EditText
+        android:id="@+id/filename"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="7dp"
+        android:hint="Enter the file" />
+
+    <TextView
+        android:id="@+id/showupload"
+        android:layout_width="119dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="39dp"
+        android:text="Show uploads"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="366dp"
+        android:layout_height="439dp"
+        android:layout_above="@+id/progressbar"
+        android:layout_below="@id/filename"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="-4dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffffff"
+        android:background="@drawable/button_rounded"
+        android:text="UPLOAD" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="72dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:id="@+id/mdesc"
+            android:hint="Enter Description About Comapany" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</RelativeLayout>
